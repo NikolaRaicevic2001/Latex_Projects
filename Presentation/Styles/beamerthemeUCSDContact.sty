@@ -1,0 +1,141 @@
+% beamerthemeUCSDContact.sty
+\ProvidesPackage{beamerthemeUCSDContact}[UCSD ERL theme]
+\mode<presentation>
+
+% ---------- Packages & colors ----------
+\RequirePackage{tikz}
+\usetikzlibrary{calc}
+\RequirePackage{graphicx}
+\RequirePackage{xcolor}
+\definecolor{brandblue}{HTML}{003B5C}
+\definecolor{brandgold}{HTML}{C69214}
+
+% ---------- Global look ----------
+\setbeamertemplate{navigation symbols}{}
+\usefonttheme{professionalfonts}
+\setbeamersize{text margin left=1.0cm, text margin right=1.0cm}
+
+% Colors
+\setbeamercolor{frametitle}{fg=white,bg=brandblue}
+\setbeamercolor{title}{fg=white,bg=brandblue}
+\setbeamercolor{structure}{fg=brandblue}     
+\setbeamercolor{section in toc}{fg=brandblue}
+\setbeamercolor{subsection in toc}{fg=brandblue}
+\setbeamercolor{section in toc shaded}{fg=brandblue!40}
+\setbeamercolor{subsection in toc shaded}{fg=brandblue!35}
+
+% ---------- Global font sizes (tweak here) ----------
+\setbeamerfont{normal text}{size=\large}
+\setbeamerfont{frametitle}{series=\bfseries,size=\large}
+\setbeamerfont{subtitle}{series=\mdseries,size=\Large}
+\setbeamerfont{itemize/enumerate body}{size=\small}
+\setbeamerfont{itemize/enumerate subbody}{size=\small}
+\setbeamerfont{pagenumber}{series=\bfseries,size=\small}
+\setbeamerfont{section in toc}{size=\normalsize}
+\setbeamerfont{subsection in toc}{size=\small}
+
+% Bullets that scale with font
+\setbeamerfont{itemize item}{size=\small}
+\setbeamertemplate{itemize item}{{\usebeamerfont{itemize item}\textbullet}}
+\setbeamertemplate{itemize subitem}{\textendash}
+
+% ------------ Outline --------------
+\setbeamertemplate{section in toc}[sections numbered]
+\setbeamertemplate{subsection in toc}[subsections numbered]
+
+% ---------- Geometry knobs ----------
+\newlength{\headerheight}      \setlength{\headerheight}{1.0cm}
+\newlength{\titlebannerheight} \setlength{\titlebannerheight}{2.30cm}
+\newlength{\chevrondent}       \setlength{\chevrondent}{1.35cm}
+\newlength{\cornertriangle}    \setlength{\cornertriangle}{1.25cm}
+\newlength{\leftbevel}         \setlength{\leftbevel}{0.85cm}
+\newlength{\rightpoint}        \setlength{\rightpoint}{1.35cm}
+
+% ---------- Frametitle handling ----------
+\providecommand{\insertframetitle}{}
+\setbeamertemplate{frametitle}{}
+\setbeamertemplate{frametitle continuation}{}
+
+% ======== NORMAL SLIDES: top chevron headline ========
+\defbeamertemplate*{headline}{UCSDContact}{%
+  \begin{tikzpicture}[remember picture,overlay]
+    \path[fill=brandblue]
+      (current page.north west) --
+      ($(current page.north east)+(-\chevrondent,0)$) --
+      ($(current page.north east)+(0,-0.5\headerheight)$) --
+      ($(current page.north east)+(-\chevrondent,-\headerheight)$) --
+      ($(current page.north west)+(0,-\headerheight)$) -- cycle;
+    \node[anchor=west,text=white]
+      at ([xshift=0.9cm,yshift=-0.55\headerheight]current page.north west)
+      {{\usebeamerfont{frametitle}\insertframetitle}};
+  \end{tikzpicture}%
+  \vspace*{0.90\headerheight}
+}
+\setbeamertemplate{headline}[UCSDContact]
+
+% ======== FOOTLINE: triangle + page number inside ========
+\defbeamertemplate*{footline}{UCSDContactPlain}{%
+  \begin{tikzpicture}[remember picture,overlay]
+    \coordinate (SE) at (current page.south east);
+    % triangle
+    \path[fill=brandblue]
+      (SE) -- ++(0,\cornertriangle) -- ++(-\cornertriangle,0) -- cycle;
+    % centered page number
+    \node[anchor=center,text=white]
+      at ([xshift=-0.37\cornertriangle,yshift=0.70\cornertriangle]SE)
+      {{\usebeamerfont{pagenumber}\insertframenumber}};
+  \end{tikzpicture}
+  \vspace*{0.40cm}
+}
+\setbeamertemplate{footline}[UCSDContactPlain]
+
+% ======== TITLE SLIDE (logos here; PIs above authors) ======== 
+\newcommand{\insertpis}{} % holder for PIs line 
+\newcommand{\pis}[1]{\renewcommand{\insertpis}{#1}} 
+
+\defbeamertemplate*{title page}{UCSDContact}{%
+    \begin{tikzpicture}[remember picture,overlay] 
+    \coordinate (NW) at (current page.north west); 
+    \coordinate (NE) at (current page.north east); 
+    \def\bannerY{-0.18} % raise/lower banner (less negative = higher) 
+    
+    \newlength{\titlebeveldrop} 
+    \setlength{\titlebeveldrop}{0.45\titlebannerheight} 
+    
+    % big beveled-left + arrow-right ribbon 
+    \path[fill=brandblue] 
+        ($(NW)+(\leftbevel,\bannerY\paperheight)$) -- 
+        ($(NE)+(-\rightpoint,\bannerY\paperheight)$) -- 
+        ($(NE)+(0,\bannerY\paperheight-0.5*\titlebannerheight)$) -- 
+        ($(NE)+(-\rightpoint,\bannerY\paperheight-\titlebannerheight)$) -- 
+        ($(NW)+(0,\bannerY\paperheight-\titlebannerheight)$) -- 
+        ($(NW)+(0,\bannerY\paperheight-\titlebeveldrop)$) -- 
+        ($(NW)+(\leftbevel,\bannerY\paperheight)$) -- cycle; 
+        
+        % title text 
+        \node[align=center,text=white, font=\bfseries\Large] 
+          at ($(NW)+(0.5\paperwidth,\bannerY\paperheight-0.5*\titlebannerheight)$) 
+          {\inserttitle}; 
+          
+        % logos 
+        \node[anchor=south west] 
+            at ([xshift=0.45cm,yshift=0.28cm]current page.south west) 
+            {\includegraphics[height=0.95cm]{Logos/ERL_Logo.png}}; 
+        \node[anchor=south] at ([yshift=0.28cm]current page.south) 
+            {\includegraphics[height=0.95cm]{Logos/CRI_Logo.png}}; 
+        \node[anchor=south east] at ([xshift=-0.45cm,yshift=0.28cm]current page.south east)                                 {\includegraphics[height=1.05cm]{Logos/UCSD_Logo.jpg}}; 
+    \end{tikzpicture}
+
+  % PIs/authors/institute/date (brand blue)
+  \vspace*{0.36\paperheight}
+  \begin{center}
+    {\color{brandblue}\bfseries \insertpis}\par
+    \vspace{0.25em}
+    {\color{brandblue}\insertauthor}\par
+    \vspace{0.35em}
+    {\color{brandblue}\insertinstitute}\par
+    \vspace{0.35em}
+    {\color{brandblue}\insertdate}
+  \end{center}
+}
+\setbeamertemplate{title page}[UCSDContact]

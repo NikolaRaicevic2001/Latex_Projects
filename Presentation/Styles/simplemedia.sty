@@ -1,0 +1,31 @@
+% simplemedia.sty — super-light commands for GIFs (as animations) and videos
+\NeedsTeXFormat{LaTeX2e}
+\ProvidesPackage{simplemedia}[2025/08/20 simple GIF+video helpers]
+
+\RequirePackage{xparse}
+\RequirePackage{graphicx}
+
+% --- GIF-like animations (via animate) ---
+\RequirePackage{animate}
+% \gifloop[<width>][<fps>]{<frame-prefix>}{<first>}{<last>}
+% Example: \gifloop[0.9\linewidth][24]{frames/demo_}{0001}{0120}
+\NewDocumentCommand{\gifloop}{O{\linewidth} O{24} m m m}{%
+  \centering
+  \animategraphics[autoplay,loop,poster=first,width=#1]{#2}{#3}{#4}{#5}%
+}
+
+% --- Video (most robust with pdfpc or Acrobat/Okular) ---
+\RequirePackage{multimedia}
+% \videofile[<width>]{<poster-image>}{<video-file>}
+% Example: \videofile[0.9\linewidth]{figs/cube_poster.png}{media/cube_demo.webm}
+\NewDocumentCommand{\videofile}{O{\linewidth} m m}{%
+  \centering
+  \movie[width=#1,showcontrols,poster]{\includegraphics[width=#1]{#2}}{#3}%
+}
+
+% --- Optional: simple “open externally” fallback button ---
+\RequirePackage{hyperref}
+% \videolink{<button text>}{<video-file>}
+\NewDocumentCommand{\videolink}{m m}{%
+  \centering\href{run:#2}{\beamerbutton{#1}}%
+}

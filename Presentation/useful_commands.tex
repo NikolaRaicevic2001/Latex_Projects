@@ -1,0 +1,42 @@
+\documentclass[aspectratio=169]{beamer}
+
+% Load the theme/package from the subfolder
+\usepackage{Styles/beamerthemeUCSDContact} 
+\usetheme{UCSDContact}                     
+\usepackage{Styles/simplemedia} 
+
+\begin{document}
+
+\begin{frame}{GIF Command} % Making GIF into frames
+mkdir frames 
+ffmpeg -i .\animation_pushbox_actual.gif -vf "fps=24,scale=1280:-1:flags=lanczos" .\frames\animation_pushbox_actual_%04d.png
+\end{frame}
+
+\begin{frame}{GIF Command}
+  \begin{columns}[T,onlytextwidth] % [T]=top align, use [c] to center vertically
+    \begin{column}{0.52\textwidth}
+      \begin{itemize}
+        \item Goal: push cube to target
+        \item Controller: MPPI with SDF-based rewards
+        \item Contact: implicit via clearance/penetration costs
+      \end{itemize}
+    \end{column}
+    \begin{column}{0.48\textwidth}
+      \centering
+      \gifloop[8cm][24]{GIFs/animation_pushbox_actual/animation_pushbox_actual_}{0001}{0048}            
+    \end{column}
+  \end{columns}
+\end{frame}
+
+\begin{frame}{Video Command} %
+  \videofile[0.7\linewidth]{Media/MPPI_CRISP.png}{media/MPPI_CRISP.webm}
+  % (optional) external fallback button:
+  \videolink{Open video}{media/MPPI_CRISP.webm}
+\end{frame}
+
+\begin{frame}{Export pdf as ppt} 
+mkdir ppt
+magick -density 450 .\_Presentation_.pdf -resize 3000x -quality 100 -strip .\ppt\slide_%02d.png
+\end{frame}
+
+\end{document}

@@ -1,0 +1,146 @@
+\headcommand {\slideentry {0}{0}{1}{1/1}{}{0}}
+\headcommand {\beamer@framepages {1}{1}}
+\headcommand {\beamer@sectionpages {1}{1}}
+\headcommand {\beamer@subsectionpages {1}{1}}
+\headcommand {\sectionentry {1}{Motivation \& Background}{2}{Motivation \& Background}{0}}
+\headcommand {\slideentry {1}{0}{1}{2/2}{}{0}}
+\headcommand {\beamer@framepages {2}{2}}
+\headcommand {\slideentry {1}{0}{2}{3/3}{}{0}}
+\headcommand {\beamer@framepages {3}{3}}
+\headcommand {\slideentry {1}{0}{3}{4/4}{}{0}}
+\headcommand {\beamer@framepages {4}{4}}
+\headcommand {\slideentry {1}{0}{4}{5/5}{}{0}}
+\headcommand {\beamer@framepages {5}{5}}
+\headcommand {\beamer@sectionpages {2}{5}}
+\headcommand {\beamer@subsectionpages {2}{5}}
+\headcommand {\sectionentry {2}{Problem Formulation}{6}{Problem Formulation}{0}}
+\headcommand {\slideentry {2}{0}{1}{6/6}{}{0}}
+\headcommand {\beamer@framepages {6}{6}}
+\headcommand {\slideentry {2}{0}{2}{7/7}{}{0}}
+\headcommand {\beamer@framepages {7}{7}}
+\headcommand {\slideentry {2}{0}{3}{8/8}{}{0}}
+\headcommand {\beamer@framepages {8}{8}}
+\headcommand {\slideentry {2}{0}{4}{9/9}{}{0}}
+\headcommand {\beamer@framepages {9}{9}}
+\headcommand {\slideentry {2}{0}{5}{10/13}{}{0}}
+\headcommand {\beamer@framepages {10}{13}}
+\headcommand {\beamer@sectionpages {6}{13}}
+\headcommand {\beamer@subsectionpages {6}{13}}
+\headcommand {\sectionentry {3}{Sample-Based Motion Planning}{14}{Sample-Based Motion Planning}{0}}
+\headcommand {\beamer@subsectionpages {14}{13}}
+\headcommand {\beamer@subsectionentry {0}{3}{1}{14}{MPPI}}
+\headcommand {\slideentry {3}{1}{1}{14/14}{MPPI}{0}}
+\headcommand {\beamer@framepages {14}{14}}
+\headcommand {\slideentry {3}{1}{2}{15/15}{MPPI}{0}}
+\headcommand {\beamer@framepages {15}{15}}
+\headcommand {\slideentry {3}{1}{3}{16/16}{MPPI}{0}}
+\headcommand {\beamer@framepages {16}{16}}
+\headcommand {\slideentry {3}{1}{4}{17/17}{MPPI}{0}}
+\headcommand {\beamer@framepages {17}{17}}
+\headcommand {\beamer@sectionpages {14}{17}}
+\headcommand {\beamer@subsectionpages {14}{17}}
+\headcommand {\sectionentry {4}{CRISP}{18}{CRISP}{0}}
+\headcommand {\beamer@subsectionpages {18}{17}}
+\headcommand {\beamer@subsectionentry {0}{4}{1}{18}{CRISP Formulation}}
+\headcommand {\slideentry {4}{1}{1}{18/18}{CRISP Formulation}{0}}
+\headcommand {\beamer@framepages {18}{18}}
+\headcommand {\slideentry {4}{1}{2}{19/19}{CRISP Formulation}{0}}
+\headcommand {\beamer@framepages {19}{19}}
+\headcommand {\slideentry {4}{1}{3}{20/20}{CRISP Formulation}{0}}
+\headcommand {\beamer@framepages {20}{20}}
+\headcommand {\slideentry {4}{1}{4}{21/21}{CRISP Formulation}{0}}
+\headcommand {\beamer@framepages {21}{21}}
+\headcommand {\slideentry {4}{1}{5}{22/22}{CRISP Formulation}{0}}
+\headcommand {\beamer@framepages {22}{22}}
+\headcommand {\slideentry {4}{1}{6}{23/23}{CRISP Formulation}{0}}
+\headcommand {\beamer@framepages {23}{23}}
+\headcommand {\slideentry {4}{1}{7}{24/24}{CRISP Formulation}{0}}
+\headcommand {\beamer@framepages {24}{24}}
+\headcommand {\slideentry {4}{1}{8}{25/25}{CRISP Formulation}{0}}
+\headcommand {\beamer@framepages {25}{25}}
+\headcommand {\beamer@subsectionpages {18}{25}}
+\headcommand {\beamer@subsectionentry {0}{4}{2}{26}{Reward Design from SDF + CRISP}}
+\headcommand {\slideentry {4}{2}{1}{26/29}{Reward Design from SDF + CRISP}{0}}
+\headcommand {\beamer@framepages {26}{29}}
+\headcommand {\slideentry {4}{2}{2}{30/30}{Reward Design from SDF + CRISP}{0}}
+\headcommand {\beamer@framepages {30}{30}}
+\headcommand {\slideentry {4}{2}{3}{31/31}{Reward Design from SDF + CRISP}{0}}
+\headcommand {\beamer@framepages {31}{31}}
+\headcommand {\slideentry {4}{2}{4}{32/32}{Reward Design from SDF + CRISP}{0}}
+\headcommand {\beamer@framepages {32}{32}}
+\headcommand {\slideentry {4}{2}{5}{33/33}{Reward Design from SDF + CRISP}{0}}
+\headcommand {\beamer@framepages {33}{33}}
+\headcommand {\slideentry {4}{2}{6}{34/34}{Reward Design from SDF + CRISP}{0}}
+\headcommand {\beamer@framepages {34}{34}}
+\headcommand {\slideentry {4}{2}{7}{35/35}{Reward Design from SDF + CRISP}{0}}
+\headcommand {\beamer@framepages {35}{35}}
+\headcommand {\slideentry {4}{2}{8}{36/36}{Reward Design from SDF + CRISP}{0}}
+\headcommand {\beamer@framepages {36}{36}}
+\headcommand {\beamer@sectionpages {18}{36}}
+\headcommand {\beamer@subsectionpages {26}{36}}
+\headcommand {\sectionentry {5}{Approach}{37}{Approach}{0}}
+\headcommand {\slideentry {5}{0}{1}{37/37}{}{0}}
+\headcommand {\beamer@framepages {37}{37}}
+\headcommand {\beamer@sectionpages {37}{37}}
+\headcommand {\beamer@subsectionpages {37}{37}}
+\headcommand {\sectionentry {6}{Task Suite}{38}{Task Suite}{0}}
+\headcommand {\beamer@subsectionpages {38}{37}}
+\headcommand {\beamer@subsectionentry {0}{6}{1}{38}{Task A: Push Cube with Cube}}
+\headcommand {\slideentry {6}{1}{1}{38/38}{Task A: Push Cube with Cube}{0}}
+\headcommand {\beamer@framepages {38}{38}}
+\headcommand {\slideentry {6}{1}{2}{39/39}{Task A: Push Cube with Cube}{0}}
+\headcommand {\beamer@framepages {39}{39}}
+\headcommand {\slideentry {6}{1}{3}{40/40}{Task A: Push Cube with Cube}{0}}
+\headcommand {\beamer@framepages {40}{40}}
+\headcommand {\slideentry {6}{1}{4}{41/41}{Task A: Push Cube with Cube}{0}}
+\headcommand {\beamer@framepages {41}{41}}
+\headcommand {\slideentry {6}{1}{5}{42/42}{Task A: Push Cube with Cube}{0}}
+\headcommand {\beamer@framepages {42}{42}}
+\headcommand {\slideentry {6}{1}{6}{43/43}{Task A: Push Cube with Cube}{0}}
+\headcommand {\beamer@framepages {43}{43}}
+\headcommand {\slideentry {6}{1}{7}{44/44}{Task A: Push Cube with Cube}{0}}
+\headcommand {\beamer@framepages {44}{44}}
+\headcommand {\slideentry {6}{1}{8}{45/45}{Task A: Push Cube with Cube}{0}}
+\headcommand {\beamer@framepages {45}{45}}
+\headcommand {\slideentry {6}{1}{9}{46/46}{Task A: Push Cube with Cube}{0}}
+\headcommand {\beamer@framepages {46}{46}}
+\headcommand {\beamer@subsectionpages {38}{46}}
+\headcommand {\beamer@subsectionentry {0}{6}{2}{47}{Task B: Push Cube with Xarm6}}
+\headcommand {\slideentry {6}{2}{1}{47/47}{Task B: Push Cube with Xarm6}{0}}
+\headcommand {\beamer@framepages {47}{47}}
+\headcommand {\slideentry {6}{2}{2}{48/48}{Task B: Push Cube with Xarm6}{0}}
+\headcommand {\beamer@framepages {48}{48}}
+\headcommand {\slideentry {6}{2}{3}{49/49}{Task B: Push Cube with Xarm6}{0}}
+\headcommand {\beamer@framepages {49}{49}}
+\headcommand {\beamer@sectionpages {38}{49}}
+\headcommand {\beamer@subsectionpages {47}{49}}
+\headcommand {\sectionentry {7}{Evaluation Protocol}{50}{Evaluation Protocol}{0}}
+\headcommand {\slideentry {7}{0}{1}{50/50}{}{0}}
+\headcommand {\beamer@framepages {50}{50}}
+\headcommand {\beamer@sectionpages {50}{50}}
+\headcommand {\beamer@subsectionpages {50}{50}}
+\headcommand {\sectionentry {8}{Results}{51}{Results}{0}}
+\headcommand {\slideentry {8}{0}{1}{51/51}{}{0}}
+\headcommand {\beamer@framepages {51}{51}}
+\headcommand {\beamer@sectionpages {51}{51}}
+\headcommand {\beamer@subsectionpages {51}{51}}
+\headcommand {\sectionentry {9}{Limitations \& Failure Modes}{52}{Limitations \& Failure Modes}{0}}
+\headcommand {\slideentry {9}{0}{1}{52/52}{}{0}}
+\headcommand {\beamer@framepages {52}{52}}
+\headcommand {\beamer@sectionpages {52}{52}}
+\headcommand {\beamer@subsectionpages {52}{52}}
+\headcommand {\sectionentry {10}{Conclusion}{53}{Conclusion}{0}}
+\headcommand {\slideentry {10}{0}{1}{53/53}{}{0}}
+\headcommand {\beamer@framepages {53}{53}}
+\headcommand {\beamer@sectionpages {53}{53}}
+\headcommand {\beamer@subsectionpages {53}{53}}
+\headcommand {\sectionentry {11}{Future Work}{54}{Future Work}{0}}
+\headcommand {\slideentry {11}{0}{1}{54/54}{}{0}}
+\headcommand {\beamer@framepages {54}{54}}
+\headcommand {\slideentry {11}{0}{2}{55/55}{}{0}}
+\headcommand {\beamer@framepages {55}{55}}
+\headcommand {\beamer@partpages {1}{55}}
+\headcommand {\beamer@subsectionpages {54}{55}}
+\headcommand {\beamer@sectionpages {54}{55}}
+\headcommand {\beamer@documentpages {55}}
+\headcommand {\gdef \inserttotalframenumber {49}}
